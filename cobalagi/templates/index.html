@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap:50px;
+        }
+        .chat-container {
+            width: 350px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-header {
+            background-color: #3f51b5;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .chat-box {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: #f4f7f6;
+        }
+        .chat-box .message {
+            margin-bottom: 20px;
+            display: flex;
+        }
+        .chat-box .message.user {
+            justify-content: flex-end;
+        }
+        .chat-box .message .content {
+            max-width: 75%;
+            padding: 10px 15px;
+            border-radius: 15px;
+            position: relative;
+        }
+        .chat-box .message.bot .content {
+            background: #3f51b5;
+            color: white;
+            border-bottom-left-radius: 0;
+        }
+        .chat-box .message.user .content {
+            background: #e1e1e1;
+            border-bottom-right-radius: 0;
+        }
+        .chat-box .message .content::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 0;
+        }
+        .chat-box .message.bot .content::after {
+            left: -10px;
+            border-left: 10px solid transparent;
+            border-bottom: 10px solid #3f51b5;
+        }
+        .chat-box .message.user .content::after {
+            right: -10px;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #e1e1e1;
+        }
+        .input-box {
+            padding: 15px;
+            background: white;
+            border-top: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+        .input-box input {
+            width: calc(100% - 40px);
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            outline: none;
+        }
+        .input-box button {
+            width: 40px;
+            height: 40px;
+            background-color: #3f51b5;
+            border: none;
+            border-radius: 50%;
+            margin-left: 10px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        .input-box button:hover {
+            background-color: #2c387e;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="chat-container">
+    <div class="chat-header">
+    APLIKASI CHATBOT SEBAGAI PUSAT LAYANAN INFORMASI MASJID ISMUHU YAHYA
+  </div>
+  </div>
+<div class="chat-container">
+  
+    <div class="chat-header">
+        Chatbot
+    </div>
+    <div class="chat-box" id="chatbox">
+        <!-- Messages will appear here -->
+    </div>
+    <div class="input-box">
+        <input id="userInput" type="text" placeholder="Type your message...">
+        <button onclick="sendMessage()">
+            <i class="fas fa-paper-plane"></i>
+        </button>
+    </div>
+</div>
+
+<script>
+    function sendMessage() {
+        var userInput = document.getElementById("userInput").value;
+        var chatbox = document.getElementById("chatbox");
+
+        if (userInput.trim() !== "") {
+
+            var userMessage = document.createElement("div");
+            userMessage.className = "message user";
+            userMessage.innerHTML = '<div class="content">' + userInput + '</div>';
+            chatbox.appendChild(userMessage);
+
+
+            document.getElementById("userInput").value = "";
+
+            chatbox.scrollTop = chatbox.scrollHeight;
+
+            fetch("/get?msg=" + encodeURIComponent(userInput))
+                .then(response => response.text())
+                .then(data => {
+                    var botMessage = document.createElement("div");
+                    botMessage.className = "message bot";
+                    botMessage.innerHTML = '<div class="content">' + data + '</div>';
+                    chatbox.appendChild(botMessage);
+                    chatbox.scrollTop = chatbox.scrollHeight;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    }
+</script>
+
+</body>
+</html>

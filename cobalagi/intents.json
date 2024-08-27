@@ -1,0 +1,204 @@
+{"intents": [
+   {
+      "tag": "fallback",
+      "patterns": [""],
+      "responses": ["Mohon maaf, informasi yang Anda cari belum tersedia."],
+      "context": [""]
+    },
+    {"tag": "sapaan",
+    "patterns": ["Hai", "Hello", "Halo", "Hei", "Hey"],
+    "responses": ["Hai", "Hello", "Halo", "Hi", "Hei"],
+    "context": [""]
+   },
+   {"tag": "sapa",
+    "patterns": ["Siapa namamu?"],
+    "responses": ["Nama saya Isnaeni"],
+    "context": [""]
+   },
+   {"tag": "greeting1",
+    "patterns": ["Assalamu'alaikum", "ass wr wb"],
+    "responses": ["Wa'alaikumsalam Warohmatullah Wabarokatuh, adakah yang bisa kami bantu?"],
+    "context": [""]
+   },
+   {"tag": "greeting2",
+    "patterns": ["Selamat pagi"],
+    "responses": ["Selamat pagi juga, semoga sehat selalu. Adakah yang bisa kami bantu?"],
+    "context": [""]
+   },
+   {"tag": "greeting3",
+    "patterns": ["Selamat siang"],
+    "responses": ["Selamat sinag juga, semoga sehat selalu. Adakah yang bisa kami bantu?"],
+    "context": [""]
+   },
+   {"tag": "greeting4",
+    "patterns": ["Selamat sore"],
+    "responses": ["Selamat sore juga, semoga sehat selalu. Adakah yang bisa kami bantu?"],
+    "context": [""]
+   },
+   {"tag": "greeting5",
+    "patterns": ["Selamat malam"],
+    "responses": ["Selamat malam juga, semoga sehat selalu. Adakah yang bisa kami bantu?"],
+    "context": [""]
+   },
+   {"tag": "SIDAQ",
+    "patterns": ["Apa itu SIDAQ" ],
+    "responses": ["SIDAQ merupakan singkatan dari Surgakan Indonesia Dengan Al-Quran, merupakan gerakan mencetak 23 juta tahfidz Al-Quran di seluruh Indonesia."],
+    "context": [""]
+   },
+   {"tag": "SIDAQ2",
+    "patterns": ["Gerakan SIDAQ" ],
+    "responses": ["SIDAQ merupakan singkatan dari Surgakan Indonesia Dengan Al-Quran, merupakan gerakan mencetak 23 juta tahfidz Al-Quran di seluruh Indonesia."],
+    "context": [""]
+   },
+   {"tag": "SIDAQ3",
+    "patterns": ["APa Makna SIDAQ?"],
+    "responses": ["SIDAQ merupakan singkatan dari Surgakan Indonesia Dengan Al-Quran, merupakan gerakan mencetak 23 juta tahfidz Al-Quran di seluruh Indonesia."],
+    "context": [""]
+   },
+   {"tag": "Program SIDAQ",
+    "patterns": ["MIM (Menghafal Itu Mudah)"],
+    "responses": ["MIM (Menghafal Itu Mudah) merupakan metode menghafal Al-Qur’an yang mudah dan menyenangkan, benefit dari program MIM ini adalah bisa menghafal ayat, menghafal nomor ayat dan terjemahan"],
+    "context": [""]
+   },
+   {"tag": "Program SIDAQ2",
+    "patterns": ["Apa itu MIM (Menghafal Itu Mudah)?" ],
+    "responses": ["MIM (Menghafal Itu Mudah) merupakan metode menghafal Al-Qur’an yang mudah dan menyenangkan, benefit dari program MIM ini adalah bisa menghafal ayat, menghafal nomor ayat dan terjemahan"],
+    "context": [""]
+   },
+   {"tag": "Program SIDAQ3",
+    "patterns": ["Untuk siapa program MIM (Menghafal Itu Mudah)?"],
+    "responses": ["Untuk kalangan umum dari berbagai usia"],
+    "context": [""]
+   },
+   {"tag": "Program SIDAQ4",
+   "patterns": ["Apakah program MIM tersedia online" ],
+   "responses": [ "Program MIM ini sudah terselenggara tidak hanya secara offline tetapi juga online yang tidak hanya diikuti oleh santri bertempa tinggal di Kota Pontianak tapi hampir seluruh Indonesia sudah merasakan program MIM ini"],
+   "context": [""]
+   },  
+   {"tag": "Program SIDAQ5",
+   "patterns": ["Apa saja program SIDAQ?" ],
+   "responses": ["MIM (Menghafal Itu Mudah), Pasar Bahagia, QUI (Qur’an untuk Indonesia), Bedah Pondok, Sunatan Masal Anak Sholeh, SIDAQ Solidarity, dan masih banyak lagi."],
+   "context": [""]
+   },
+   {"tag": "Program SIDAQ6",
+   "patterns": ["Apa itu pasar bahagia?" ],
+   "responses": ["Pasar bahagia memiliki jargon “Belanja Cuma-Cuma, Bayar Pakai Doa”, merupakan kegiatan rutinan setiap 1x/pekan yang dihadiri oleh jama’ah ibu-ibu, bapak-bapak dan anak-anak. Kegiatan ini bertujuan untuk menarik jama’ah agar kembali ke masjid untuk belajar mengaji, shalat berjama’ah dan mendengar kajian islami."],
+   "context": [""]
+   } ,
+   {"tag": "Program SIDAQ7",
+   "patterns": ["Pasar bahagia" ],
+   "responses": ["Pasar bahagia memiliki jargon “Belanja Cuma-Cuma, Bayar Pakai Doa”, merupakan kegiatan rutinan setiap 1x/pekan yang dihadiri oleh jama’ah ibu-ibu, bapak-bapak dan anak-anak. Kegiatan ini bertujuan untuk menarik jama’ah agar kembali ke masjid untuk belajar mengaji, shalat berjama’ah dan mendengar kajian islami."],
+   "context": [""]
+   },
+{"tag": "Program SIDAQ8",
+"patterns": ["Dimana pusat gerakan sidaq?" ],
+"responses": ["Berpusat di Pontianak, pengelolaan program berada di bawah naungan Pondok Digital yang didirikan oleh KH. Adi Pratama Larisindo"],
+"context": [""]
+},
+{"tag": "Program SIDAQ9",
+"patterns": ["Dimana pusat dakwah sidaq?" ],
+"responses": ["Berpusat di Pontianak, pengelolaan program berada di bawah naungan Pondok Digital yang didirikan oleh KH. Adi Pratama Larisindo"],
+"context": [""]
+},
+{"tag": "Program SIDAQ10",
+"patterns": ["Dimana pusat sidaq?" ],
+"responses": ["Berpusat di Pontianak, pengelolaan program berada di bawah naungan Pondok Digital yang didirikan oleh KH. Adi Pratama Larisindo"],
+"context": [""]
+},
+{"tag": "Siapa1",
+"patterns": ["Siapa Adipratama Larisindo?" ],
+"responses": ["KH. Adi Pratama Larisindo adalah pengasuh Masjid Ismuhu Yahya"],
+"context": [""]
+},
+{"tag": "Siapa2",
+"patterns": ["apa itu MIM (Menghafal Itu Mudah)?" ],
+"responses": ["KH. Adi Pratama Larisindo adalah pengasuh Masjid Ismuhu Yahya"],
+"context": [""] 
+},
+{"tag": "Sejarah1",
+"patterns": ["Apa itu masjid ismuhu yahya?" ],
+"responses": ["Masjid Ismuhu Yahya adalah salah satu masjid yang di support dalam program SIDAQ (Surgakan Indonesia Dengan Al-Qur’an)."],
+"context": [""] 
+},
+{"tag": "Sejarah2",
+"patterns": ["Mengapa dinamakan masjid ismuhu yahya?" ],
+"responses": ["Nama Ismuhu Yahya diambil dari spirit Nabi Zakaria yang didalam doanya tidak pernah kecewa kepada Allah setelah melantunkan doa yang Panjang dan lama. Dalam kisah ini juga menceritakan tentang bagaimana Allah berbuat sesuatu menurut kehendak-Nya walaupun bertentangan dengan ilmu sains yang ada sehingga dengan terkabulnya doa Zakaria"],
+"context": [""] 
+},
+{"tag": "Sejarah3",
+"patterns": ["Apa maksud dari nama ismuhu yahya?" ],
+"responses": ["Nama Ismuhu yahya diambil dari Qur'an Surah Maryam ayat 7 bahwa Allah memberikan kabar gembira dengan seorang anak laki-laki yang Bernama Yahya yang belum pernah memberikan nama itu sebelumnya."],
+"context": [""] 
+},
+{"tag": "Sejarah4",
+"patterns": ["Siapa pendiri masjid ismuhu yahyaa?" ],
+"responses": ["Masjid ini didirikan oleh KH. Adipratama Larisindo dan diberi nama oleh Kyai Luqmanulhakim pengasuh Masjid Munzalan dan dihadiri oleh Ustadz Abdul Shomad ketika peletakan batu pertama."],
+"context": [""] 
+},
+{"tag": "Sejarah5",
+"patterns": ["Dimana masjid ismuhu yahya?" ],
+"responses": ["Masjid ini terletak dijalan Parit No 2, kecamatan Sungai Raya, Kabupaten Kubu Raya, Pontianak, Kalimantan Barat."],
+"context": [""] 
+},
+{"tag": "Sejarah6",
+"patterns": ["Dimana alamat masjid ismuhu yahya?" ],
+"responses": ["Masjid ini terletak dijalan Parit No 2, kecamatan Sungai Raya, Kabupaten Kubu Raya, Pontianak, Kalimantan Barat."],
+"context": [""] 
+},
+{"tag": "Sejarah7",
+"patterns": ["Dimana letak masjid ismuhu yahya?" ],
+"responses": ["Masjid ini terletak dijalan Parit No 2, kecamatan Sungai Raya, Kabupaten Kubu Raya, Pontianak, Kalimantan Barat."],
+"context": [""] 
+},
+{"tag": "Sejarah8",
+"patterns": ["Dimana masjid ismuhu yahya?" ],
+"responses": ["Masjid ini terletak dijalan Parit No 2, kecamatan Sungai Raya, Kabupaten Kubu Raya, Pontianak, Kalimantan Barat."],
+"context": [""] 
+},
+{"tag": "Sejarah9",
+"patterns": ["Kapan masjid ismuhu yahya didirikan?" ],
+"responses": ["Masjid Ismuhu Yahya didirikan tanggal 20 Oktober 2020 dan mulai pertama kali beroperasi tanggal 21 April 2021."],
+"context": [""] 
+},
+{"tag": "Santri1",
+"patterns": ["Apa pilar utama santri?" ],
+"responses": ["Masjid ini terletak dijalan Parit No 2, kecamatan Sungai Raya, Kabupaten Kubu Raya, Pontianak, Kalimantan Barat."],
+"context": [""] 
+},
+{"tag": "Santri2",
+"patterns": ["Apa itu militan?" ],
+"responses": ["Menjadi santri harus militan, siap dalam segala hal, kapanpun dan dimanapun, karena nanti di masyarakat dia yang akan membawa peradaban, maka jangan sampai santri mudah goyah dengan gangguan yang ada di masyarakat."],
+"context": [""] 
+},
+{"tag": "Santri3",
+"patterns": ["Apa itu addict qur'an?" ],
+"responses": ["Addict qur'an, dimana santri harus dekat dengan Quran, bahkan sampai di tingkat “kecanduan”, tidak bisa satu hari pun ia lalui tanpa membaca Al-Quran, menghafal ayat, atau membaca tafsir. Maka, dalam upaya mencapai tingkat ini, santri perlu menguasai tahsin, tajwid, fashahatul lisan, dan ilmu alquran yang lainnya."],
+"context": [""] 
+},
+{"tag": "Santri4",
+"patterns": ["Apa itu skill kompetensi santri?" ],
+"responses": ["Santri harus memiliki kompetensi lain selain alquran, yang bisa menjadi wasilah ia menyampaikan ayat alquran itu, agar lebih masuk ke masyarakat. Bisa jadi ia memiliki kompetensi memasak, maka dengan masakannya itulah ia jadikan wasilah untuk menyampaikan ayat-ayat Allah."],
+"context": [""] 
+},
+{"tag": "Santri5",
+"patterns": ["Apa itu public speaking?" ],
+"responses": ["Kemampuan public speaking penting dimiliki oleh santri dalam menyampaikan ayat-ayat alquran agar mudah dimengerti oleh audiens, karena harus menyesuaikan dengan bahasa, budaya dan tradisi di masyarakat agar tidak terjadi penolakan"],
+"context": [""] 
+},
+{"tag": "Santri6",
+"patterns": ["Apa itu skill kompetensi santri?" ],
+"responses": ["Santri harus memiliki kompetensi lain selain alquran, yang bisa menjadi wasilah ia menyampaikan ayat alquran itu, agar lebih masuk ke masyarakat. Bisa jadi ia memiliki kompetensi memasak, maka dengan masakannya itulah ia jadikan wasilah untuk menyampaikan ayat-ayat Allah."],
+"context": [""] 
+},
+{"tag": "Santri7",
+"patterns": ["Seperti apa karakter santri?" ],
+"responses": ["Santri harus memiliki Kepedulian, Kedisiplinan, Kemandirian"],
+"context": [""] 
+},
+{"tag": "Santri8",
+"patterns": ["Apa saja aktifitas santri?" ],
+"responses": ["Aktifitas santri meliputi mandi subuh, tahajud, muroja'ah hafalan, sholat berjamaah 5 waktu, membaca qur'an one day one juz, dzikir pagi petang, kajian 1 doa, halaqoh qur'an, mengajar."],
+"context": [""] 
+}
+]
+}
